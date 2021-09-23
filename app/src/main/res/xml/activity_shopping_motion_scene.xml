@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1500"
+        >
+       <KeyFrameSet>
+       </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            motion:layout_editor_absoluteY="16dp"
+            android:layout_height="wrap_content"
+            motion:layout_editor_absoluteX="73dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/textView4" />
+        <Constraint
+            motion:layout_editor_absoluteY="177dp"
+            android:layout_height="wrap_content"
+            motion:layout_editor_absoluteX="174dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/imageButton" />
+        <Constraint
+            motion:layout_editor_absoluteY="358dp"
+            android:layout_height="wrap_content"
+            motion:layout_editor_absoluteX="174dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/imageButton2" />
+        <Constraint
+            motion:layout_editor_absoluteY="535dp"
+            android:layout_height="wrap_content"
+            motion:layout_editor_absoluteX="174dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/imageButton3" />
+        <Constraint
+            motion:layout_editor_absoluteY="111dp"
+            android:layout_height="66dp"
+            motion:layout_editor_absoluteX="136dp"
+            android:layout_width="121dp"
+            android:id="@+id/imageView14" />
+        <Constraint
+            motion:layout_editor_absoluteY="294dp"
+            android:layout_height="64dp"
+            motion:layout_editor_absoluteX="128dp"
+            android:layout_width="135dp"
+            android:id="@+id/imageView15" />
+        <Constraint
+            motion:layout_editor_absoluteY="470dp"
+            android:layout_height="65dp"
+            motion:layout_editor_absoluteX="128dp"
+            android:layout_width="136dp"
+            android:id="@+id/imageView16" />
+        <Constraint
+            motion:layout_editor_absoluteY="657dp"
+            android:layout_height="134dp"
+            motion:layout_editor_absoluteX="89dp"
+            android:layout_width="214dp"
+            android:id="@+id/imageView17" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:layout_height="46dp"
+            android:layout_width="119dp"
+            android:id="@+id/imageView14"
+            motion:layout_constraintEnd_toEndOf="@+id/imageView17"
+            motion:layout_constraintBottom_toBottomOf="@+id/imageView17" />
+        <Constraint
+            android:layout_height="53dp"
+            motion:layout_editor_absoluteX="136dp"
+            android:layout_width="108dp"
+            android:id="@+id/imageView15"
+            motion:layout_constraintBottom_toBottomOf="@+id/imageView17" />
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_editor_absoluteX="159dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/imageView16"
+            motion:layout_constraintBottom_toBottomOf="@+id/imageView15" />
+        <Constraint
+            motion:layout_editor_absoluteY="649dp"
+            android:layout_height="142dp"
+            motion:layout_editor_absoluteX="107dp"
+            android:layout_width="179dp"
+            android:id="@+id/imageView17" />
+    </ConstraintSet>
+</MotionScene>
